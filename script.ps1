@@ -25,4 +25,4 @@ rm $p\*.xml
 rm $p\*.txt
 cd ..
 rm Logs
-rm C:\d.ps1
+rm d.ps1
